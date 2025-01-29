@@ -23,3 +23,13 @@ marp: true
 - `continuous`で取得したデータに対してスパイクノイズを消したい場合
     - `Smooth`の`SG Fitting`を最初に用いて、
     あとは`Digital Smoothing Polynomial`→`Normalize`を実行する
+
+---
+#### Reference線量計を用いない場合の測定方法
+1. Referenceを`No Detector`にする
+2. 使用するビームのエネルギーの測定前に`setup`の`Normalize`を行う　　
+（MEASURE画面のNormalizeからできる）
+3. 測定を開始する
+
+**tips**
+`Reference`を`(No Detector)`にするには、`一括で測定項目を選択`して`EDIT`に入り`Remove reference`で可能
