@@ -20,3 +20,6 @@ marp: true
     !`Smooth`の`Spike Removal`で移動に対する測定値の変動を除去することができそう　　
     `step-by-step`の`Dwell time(seconds)`の設定によって異なるので、Dwell timeを変更したときには注意  
     > Dwell timeとSpike Removalの設定は反比例させる(Dwell time=0.25 → Spike Removal=0.5のように)
+- `continuous`で取得したデータに対してスパイクノイズを消したい場合
+    - `Smooth`の`SG Fitting`を最初に用いて、
+    あとは`Digital Smoothing Polynomial`→`Normalize`を実行する
