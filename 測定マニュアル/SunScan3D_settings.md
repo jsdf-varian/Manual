@@ -27,9 +27,18 @@ marp: true
 ---
 #### Reference線量計を用いない場合の測定方法
 1. Referenceを`No Detector`にする
-2. 使用するビームのエネルギーの測定前に`setup`の`Normalize`を行う　　
+2. 使用するビームのエネルギーの測定前に`setup`の`Normalize`を行う
 （MEASURE画面のNormalizeからできる）
 3. 測定を開始する
 
 **tips**
 `Reference`を`(No Detector)`にするには、`一括で測定項目を選択`して`EDIT`に入り`Remove reference`で可能
+
+---
+### SFDで測定する場合
+前提:AutoSetupが全て終了後に以下を実施する
+1. Attachmentホルダを`universal vertical`に交換する
+2. `universal vertical`の取付面が水面と同じになっていることを確認する
+3. SFDを軽く止めて、ホルダ上面とSFDの測定部分の下端が引っかかるように固定する
+4. 水面とSFD上端が一致していることを確認する。実効中心をONにして、`Positionのz=0`にして水面と一致を確認する。
+5. 水面と一致しないときは、`ENVIRONMENT`の`Detectors`からSFDの`Offset`を変更する。（2月3日現在、1.50cm設定）
